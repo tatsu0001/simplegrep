@@ -5,8 +5,8 @@ object SimpleGrepBuild extends Build {
   val buildSettings = Seq(
     version := "0.1",
     scalaVersion := "2.10.3",
-    scalacOptions ++= Seq("-Xlint")
-    )
+    scalacOptions ++= Seq(
+      "-Xlint", "-feature"))
 
   val resolverSettings = Seq(
     resolvers += Resolver.sonatypeRepo("public")
